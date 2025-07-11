@@ -10,7 +10,7 @@ lista_jogadores = [
         "Nome": "LeBron James",
         "Posição": "Ala-Pivô",
         'Número': "23",
-        "foto": 0,
+        "foto": "static/Lakers/img/LebBronJames.jpg",
     },{
         "id": 2,
         "Nome": "Luka Doncit",
@@ -30,7 +30,7 @@ lista_jogadores = [
 
 def jogadores(request):
     context = {
-        'time': lista_jogadores,
+        'lista_jogadores': lista_jogadores,
         }
     return render(request, "Lakers/jogadores.html", context)
 
